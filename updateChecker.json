@@ -1,14 +1,11 @@
 {
   "homepage": "https://github.com/EvergoodTeam/EvergoodUtilities",
   "1.12.2": {
-    "0.2": "<changelog for this version>", 
-
+    "0.1": "first",
+    "0.2": "second"
   },
-
   "promos": {
-    "<mcversion>-latest": "<modversion>",
-
-    "<mcversion>-recommended": "<modversion>",
-
+    "1.12.2-latest": "0.2",
+    "1.12.2-recommended": "0.2"
   }
 }
