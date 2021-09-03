@@ -1,11 +1,10 @@
 {
-  "homepage": "https://github.com/EvergoodTeam/EvergoodUtilities",
+  "homepage": "https://www.curseforge.com/minecraft/mc-mods/evergoodutilities",
   "1.12.2": {
-    "0.1": "first",
-    "0.2": "second"
+    "0.1": "Initial Release"
   },
   "promos": {
-    "1.12.2-latest": "0.2",
-    "1.12.2-recommended": "0.2"
+    "1.12.2-latest": "0.1",
+    "1.12.2-recommended": "0.1"
   }
 }
