@@ -7,7 +7,7 @@ You can find more information about it and the Stable Versions only on Curseforg
 
 In case you find a reposted version on another site, please report it to us
 
-You can find the dev Versions and dev Serverpacks here on GitHub: https://github.com/EvergoodTeam/EvergoodUtilities/releases
+You can find the dev Versions here on GitHub: https://github.com/EvergoodTeam/EvergoodUtilities/releases
 
 ## Support us!
 Want to support us? Make sure to use code "Libra" when renting a server over at BisectHosting! https://www.bisecthosting.com/Libra
