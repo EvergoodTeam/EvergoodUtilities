@@ -1,7 +1,7 @@
 <img src="https://i.imgur.com/Xu4rNEd.png" align="center" />
 
 # Evergood Utilities <a href=https://www.curseforge.com/minecraft/mc-mods/evergoodutilities> <img src="http://cf.way2muchnoise.eu/523308.svg"> </a>
-Evergood Utilities is a Minecraft mod for 1.12.2 consisting of a collection of items, blocks and fluids created as integration between other mods
+Evergood Utilities is a Minecraft Mod for 1.12.2 consisting of a collection of Items, Blocks and Fluids created as integration between other Mods
 
 You can find more information about it and the Stable Versions only on Curseforge: https://www.curseforge.com/minecraft/mc-mods/evergoodutilities
 
