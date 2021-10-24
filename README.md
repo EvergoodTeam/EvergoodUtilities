@@ -7,7 +7,13 @@ You can find more information about it and the Stable Versions only on Curseforg
 
 In case you find a reposted version on another site, please report it to us
 
-You can find the dev Versions here on GitHub: https://github.com/EvergoodTeam/EvergoodUtilities/releases
+## Dev Versions
+
+Here on GitHub you will find version in development, meaning that they're unstable compared to the realeased version on [Curseforge](https://www.curseforge.com/minecraft/mc-mods/evergoodutilities)
+
+You can find them here: https://github.com/EvergoodTeam/EvergoodUtilities/releases
+
+The Source code posted already contains changes for upcoming versions, so it will differ from compiled and posted ones
 
 ## Support us!
 Want to support us? Make sure to use code "Libra" when renting a server over at BisectHosting! https://www.bisecthosting.com/Libra
