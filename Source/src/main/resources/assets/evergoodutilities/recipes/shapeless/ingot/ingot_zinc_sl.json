@@ -1,0 +1,19 @@
+{
+    "conditions": [
+        {
+            "type": "config_additions",
+            "add": "Items"
+        }
+    ],
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "type": "forge:ore_dict",
+            "ore": "ingotZinc"
+        }
+    ],
+    "result": {
+        "item": "evergoodutilities:nugget_zinc",
+        "count": 9
+    }
+}

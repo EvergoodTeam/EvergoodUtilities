@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "type": "config_compat",
+      "mod": "BiomesOPlenty"
+    },
+    {
+      "type": "config_additions",
+      "add": "Items"
+    }
+  ],
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "gemTanzanite"
+    }
+  ],
+  "result": {
+    "item": "evergoodutilities:nugget_tanzanite",
+    "count": 9
+  }
+}

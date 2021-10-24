@@ -1,0 +1,36 @@
+{
+  "conditions": [
+    {
+      "type": "config_compat",
+      "mod": "BiomesOPlenty"
+    },
+    {
+      "type": "config_additions",
+      "add": "Items"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "###",
+    "###",
+    "###"
+  ],
+
+  "key":
+  {
+    "#":
+    {
+      "type": "forge:ore_dict",
+      "ore": "nuggetTanzanite"
+    }
+  },
+
+  "result":
+  {
+    "item":  "biomesoplenty:gem",
+    "count": 1,
+    "data": 4
+  }
+}

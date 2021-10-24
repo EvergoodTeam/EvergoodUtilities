@@ -1,0 +1,36 @@
+{
+  "conditions": [
+    {
+      "type": "config_compat",
+      "mod": "Nuclearcraft"
+    },
+    {
+      "type": "config_additions",
+      "add": "Items"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "###",
+    "###",
+    "###"
+  ],
+
+  "key":
+  {
+    "#":
+    {
+      "type": "forge:ore_dict",
+      "ore": "nuggetMagnesium"
+    }
+  },
+
+  "result":
+  {
+    "item":  "nuclearcraft:ingot",
+    "count": 1,
+    "data": 7
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_all",
+    "textures":
+    {
+        "all": "evergoodutilities:fluids/fluid_zinc_still"
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "conditions": [
+    {
+      "type": "config_compat",
+      "mod": "Thermal"
+    },
+    {
+      "type": "config_additions",
+      "add": "Items"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "oe",
+    "y "
+  ],
+
+  "key":
+  {
+    "o":
+    {
+      "type": "forge:ore_dict",
+      "ore": "oreZinc"
+    },
+    "e":
+    {
+      "item": "thermalfoundation:material",
+      "data": 1027
+    },
+    "y":
+    {
+      "item": "thermalfoundation:material",
+      "data": 1024
+    }
+  },
+
+  "result":
+  {
+    "item":  "evergoodutilities:ingot_zinc",
+    "count": 2
+  }
+}

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "evergoodutilities",
+  "name": "Evergood Utilities",
+  "description": "A collection of items, blocks and fluids created as integration between other mods",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://bit.ly/evergoodutilities\n",
+  "updateUrl": "",
+  "authorList": ["§3Discord: https://discord.gg/k2P68Y8\n§6      Curseforge: https://bit.ly/evergoodproject\n"],
+  "credits": "",
+  "logoFile": "utilities.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]

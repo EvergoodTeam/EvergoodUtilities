@@ -1,0 +1,7 @@
+{
+  "conditions": {
+    "mod_loaded": "evergoodteam.evergoodutilities.recipes.conditions.ConditionModLoaded",
+    "config_additions": "evergoodteam.evergoodutilities.recipes.conditions.ConditionAdditions",
+    "config_compat": "evergoodteam.evergoodutilities.recipes.conditions.ConditionCompat"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "type": "config_compat",
+      "mod": "Nuclearcraft"
+    },
+    {
+      "type": "config_additions",
+      "add": "Items"
+    }
+  ],
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "ingotBeryllium"
+    }
+  ],
+  "result": {
+    "item": "evergoodutilities:nugget_beryllium",
+    "count": 9
+  }
+}

@@ -1,0 +1,31 @@
+{
+    "conditions": [
+        {
+            "type": "config_additions",
+            "add": "Items"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "###",
+        "###",
+        "###"
+    ],
+
+    "key":
+    {
+        "#":
+        {
+            "type": "forge:ore_dict",
+            "ore": "nuggetPalladium"
+        }
+    },
+
+    "result":
+    {
+        "item":  "evergoodutilities:ingot_palladium",
+        "count": 1
+    }
+}

@@ -1,0 +1,120 @@
+# Blocks ############################################
+tile.ore_zinc.name=Zinc Ore
+tile.block_zinc.name=Block of Zinc
+tile.fluid_zinc.name=Molten Zinc
+
+tile.ore_palladium.name=Palladium Ore
+tile.block_palladium.name=Block of Palladium
+tile.fluid_palladium.name=Molten Palladium
+
+tile.ore_titanium.name=Titanium Ore
+tile.block_titanium.name=Block of Titanium
+tile.fluid_titanium.name=Molten Titanium
+
+tile.block_mercury.name=Block of Mercury
+tile.fluid_mercury.name=Mercury
+
+
+tile.ore_cinnabar.name=Cinnabar Ore
+
+tile.block_astralstarmetal.name=Block of Starmetal
+tile.fluid_astralstarmetal.name=Molten Starmetal
+
+tile.block_aquamarine.name=Block of Aquamarine
+tile.fluid_aquamarine=Molten Aquamarine
+
+
+# Fluids ############################################
+fluid.fluid_mercury=Mercury
+fluid.fluid_zinc=Molten Zinc
+fluid.fluid_palladium=Molten Palladium
+fluid.fluid_titanium=Molten Titanium
+fluid.fluid_astralstarmetal=Molten Starmetal
+fluid.fluid_aquamarine=Molten Aquamarine
+
+
+# Gas ##############################################
+gas.zincSlurry=Zinc Slurry
+gas.palladiumSlurry=Palladium Slurry
+gas.mercurySlurry=Mercury Slurry
+gas.cleanZincSlurry=Clean Zinc Slurry
+gas.cleanPalladiumSlurry=Clean Palladium Slurry
+gas.cleanMercurySlurry=Clean Mercury Slurry
+
+
+# Items ############################################
+
+## Mekanism
+item.crystal_zinc.name=Zinc Crystal
+item.shard_zinc.name=Zinc Shard
+item.clump_zinc.name=Zinc Clump
+item.dustdirty_zinc.name=Dirty Zinc Dust
+
+item.crystal_palladium.name=Palladium Crystal
+item.shard_palladium.name=Palladium Shard
+item.clump_palladium.name=Palladium Clump
+item.dustdirty_palladium.name=Dirty Palladium Dust
+
+item.crystal_titanium.name=Titanium Crystal
+item.shard_titanium.name=Titanium Shard
+item.clump_titanium.name=Titanium Clump
+item.dustdirty_titanium.name=Dirty Titanium Dust
+
+item.crystal_mercury.name=Mercury Crystal
+item.shard_mercury.name=Mercury Shard
+item.clump_mercury.name=Mercury Clump
+item.dustdirty_mercury.name=Dirty Mercury Dust
+
+
+## Metals
+item.dust_zinc.name=Zinc Dust
+item.nugget_zinc.name=Zinc Nugget
+item.ingot_zinc.name=Zinc Ingot
+
+item.dust_palladium.name=Palladium Dust
+item.nugget_palladium.name=Palladium Nugget
+item.ingot_palladium.name=Palladium Ingot
+
+item.dust_titanium.name=Titanium Dust
+item.nugget_titanium.name=Titanium Nugget
+item.ingot_titanium.name=Titanium Ingot
+
+item.dust_mercury.name=Mercury Dust
+item.nugget_mercury.name=Mercury Nugget
+item.ingot_mercury.name=Mercury Ingot
+
+
+## Misc
+item.nugget_lapis.name=Lapis Nugget
+
+item.nugget_boron.name=Boron Nugget
+item.nugget_lithium.name=Lithium Nugget
+item.nugget_thorium.name=Thorium Nugget
+item.nugget_uranium.name=Uranium Nugget
+item.nugget_magnesium.name=Magnesium Nugget
+item.nugget_graphite.name=Graphite Nugget
+item.nugget_beryllium.name=Beryllium Nugget
+item.nugget_zirconium.name=Zirconium Nugget
+item.nugget_manganese.name=Manganese Nugget
+
+item.nugget_amethyst.name=Ender Amethyst Nugget
+item.nugget_ruby.name=Ruby Nugget
+item.nugget_peridot.name=Peridot Nugget
+item.nugget_topaz.name=Topaz Nugget
+item.nugget_tanzanite.name=Tanzanite Nugget
+item.nugget_malachite.name=Malachite Nugget
+item.nugget_sapphire.name=Sapphire Nugget
+item.nugget_amber.name=Amber Nugget
+
+item.icon_dot.name=Dot
+item.icon_block1.name=Icon 1
+item.icon_block2.name=Icon 2
+item.icon_block3.name=Icon 3
+item.icon_block4.name=Icon 4
+
+
+# Tabs ############################################
+itemGroup.evergoodutilitiestab=Evergood Utilities
+
+
+

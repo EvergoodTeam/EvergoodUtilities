@@ -1,0 +1,31 @@
+{
+    "conditions": [
+        {
+            "type": "config_additions",
+            "add": "Blocks"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "###",
+        "###",
+        "###"
+    ],
+
+    "key":
+    {
+        "#":
+        {
+            "type": "forge:ore_dict",
+            "ore": "ingotZinc"
+        }
+    },
+
+    "result":
+    {
+        "item":  "evergoodutilities:block_zinc",
+        "count": 1
+    }
+}

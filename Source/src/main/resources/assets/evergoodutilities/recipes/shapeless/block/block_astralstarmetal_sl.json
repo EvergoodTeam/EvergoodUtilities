@@ -1,0 +1,24 @@
+{
+  "conditions": [
+    {
+      "type": "config_additions",
+      "add": "Blocks"
+    },
+    {
+      "type": "mod_loaded",
+      "mod": "astralsorcery"
+    }
+  ],
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "blockAstralStarmetal"
+    }
+  ],
+  "result": {
+    "item": "astralsorcery:itemcraftingcomponent",
+    "count": 9,
+    "data": 1
+  }
+}
