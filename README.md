@@ -24,3 +24,6 @@ https://discord.gg/k2P68Y8
 
 ## Issues
 If you encounter any issue during your playthrough, either with the Modpack itself or the Serverpack, make sure to report it either here on [GitHub](https://github.com/EvergoodTeam/EvergoodUtilities/issues) or on [Discord](https://discord.gg/k2P68Y8) in the correct channel (#issues)
+
+## Licence
+[Read here](https://github.com/EvergoodTeam/EvergoodUtilities/blob/main/LICENSE.md)
