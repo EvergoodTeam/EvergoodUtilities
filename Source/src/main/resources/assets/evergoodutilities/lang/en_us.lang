@@ -17,18 +17,20 @@ tile.fluid_mercury.name=Mercury
 
 tile.ore_cinnabar.name=Cinnabar Ore
 
-tile.block_astralstarmetal.name=Block of Starmetal
-tile.fluid_astralstarmetal.name=Molten Starmetal
 
+tile.block_astralstarmetal.name=Block of Starmetal
 tile.block_aquamarine.name=Block of Aquamarine
+
+tile.fluid_astralstarmetal.name=Molten Starmetal
 tile.fluid_aquamarine=Molten Aquamarine
 
 
 # Fluids ############################################
-fluid.fluid_mercury=Mercury
 fluid.fluid_zinc=Molten Zinc
 fluid.fluid_palladium=Molten Palladium
 fluid.fluid_titanium=Molten Titanium
+fluid.fluid_mercury=Mercury
+
 fluid.fluid_astralstarmetal=Molten Starmetal
 fluid.fluid_aquamarine=Molten Aquamarine
 
@@ -36,9 +38,12 @@ fluid.fluid_aquamarine=Molten Aquamarine
 # Gas ##############################################
 gas.zincSlurry=Zinc Slurry
 gas.palladiumSlurry=Palladium Slurry
+gas.titaniumSlurry=Titanium Slurry
 gas.mercurySlurry=Mercury Slurry
+
 gas.cleanZincSlurry=Clean Zinc Slurry
 gas.cleanPalladiumSlurry=Clean Palladium Slurry
+gas.cleanTitaniumSlurry=Clean Titanium Slurry
 gas.cleanMercurySlurry=Clean Mercury Slurry
 
 
@@ -70,18 +75,22 @@ item.dustdirty_mercury.name=Dirty Mercury Dust
 item.dust_zinc.name=Zinc Dust
 item.nugget_zinc.name=Zinc Nugget
 item.ingot_zinc.name=Zinc Ingot
+item.plate_zinc.name=Zinc Plate
 
 item.dust_palladium.name=Palladium Dust
 item.nugget_palladium.name=Palladium Nugget
 item.ingot_palladium.name=Palladium Ingot
+item.plate_palladium.name=Palladium Plate
 
 item.dust_titanium.name=Titanium Dust
 item.nugget_titanium.name=Titanium Nugget
 item.ingot_titanium.name=Titanium Ingot
+item.plate_titanium.name=Titanium Plate
 
 item.dust_mercury.name=Mercury Dust
 item.nugget_mercury.name=Mercury Nugget
 item.ingot_mercury.name=Mercury Ingot
+item.plate_mercury.name=Mercury Plate
 
 
 ## Misc
@@ -105,6 +114,8 @@ item.nugget_tanzanite.name=Tanzanite Nugget
 item.nugget_malachite.name=Malachite Nugget
 item.nugget_sapphire.name=Sapphire Nugget
 item.nugget_amber.name=Amber Nugget
+
+item.gem_cinnabar.name=Cinnabar
 
 item.icon_dot.name=Dot
 item.icon_block1.name=Icon 1

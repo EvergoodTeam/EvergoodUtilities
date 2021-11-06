@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "evergoodutilities:items/ingot_metal_base"
+    "layer0": "evergoodutilities:items/ingot_metal_base",
+    "layer1": "evergoodutilities:items/ingot_shine"
   }
 }

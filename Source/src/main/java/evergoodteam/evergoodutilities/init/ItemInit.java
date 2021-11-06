@@ -52,6 +52,11 @@ public class ItemInit {
     public static final Item INGOT_TITANIUM = Configs.additions.Items ? new ItemBase("ingot_titanium", true) : null;
     public static final Item INGOT_MERCURY = Configs.additions.Items ? new ItemBase("ingot_mercury", true) : null;
 
+    public static final Item PLATE_ZINC = Configs.additions.Items ? Configs.compat.Mod("Thermal") ? new ItemBase("plate_zinc", true) : null : null;
+    public static final Item PLATE_PALLADIUM = Configs.additions.Items ? Configs.compat.Mod("Thermal") ? new ItemBase("plate_palladium", true) : null : null;
+    public static final Item PLATE_TITANIUM = Configs.additions.Items ? Configs.compat.Mod("Thermal") ? new ItemBase("plate_titanium", true) : null : null;
+    public static final Item PLATE_MERCURY = Configs.additions.Items ? Configs.compat.Mod("Thermal") ? new ItemBase("plate_mercury", true) : null : null;
+
 
     // Misc
     public static final Item NUGGET_LAPIS = Configs.additions.Items ? new ItemBase("nugget_lapis", true) : null;
@@ -74,6 +79,8 @@ public class ItemInit {
     public static final Item NUGGET_MALACHITE = Configs.additions.Items ? Configs.compat.Mod("BiomesOPlenty") ? new ItemBase("nugget_malachite", true) : null : null;
     public static final Item NUGGET_SAPPHIRE = Configs.additions.Items ? Configs.compat.Mod("BiomesOPlenty") ? new ItemBase("nugget_sapphire", true) : null : null;
     public static final Item NUGGET_AMBER = Configs.additions.Items ? Configs.compat.Mod("BiomesOPlenty") ? new ItemBase("nugget_amber", true) : null : null;
+
+    public static final Item GEM_CINNABAR = Configs.additions.Items ? new ItemBase("gem_cinnabar", true) : null;
 
 
     public static final Item ICON_DOT = new ItemBase("icon_dot", false);

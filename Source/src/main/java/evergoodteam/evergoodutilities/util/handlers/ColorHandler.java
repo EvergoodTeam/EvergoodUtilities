@@ -3,7 +3,10 @@ package evergoodteam.evergoodutilities.util.handlers;
 
 import evergoodteam.evergoodutilities.config.Configs;
 import evergoodteam.evergoodutilities.init.FluidInit;
+import evergoodteam.evergoodutilities.init.ItemInit;
 import evergoodteam.evergoodutilities.objects.items.ItemBase;
+import evergoodteam.evergoodutilities.util.GetInfo;
+import evergoodteam.evergoodutilities.util.GetList;
 import evergoodteam.evergoodutilities.util.Reference;
 
 import net.minecraft.client.renderer.color.IItemColor;
@@ -12,23 +15,16 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
+import org.apache.commons.lang3.ArrayUtils;
 
-/**
- * Thanks Choonster: https://git.io/J0hPz
- * If the link above ever stops working, contanct whoever is currently maintaining Evergood Utilities.
- *
- * His code was obviously modified quite a bit for our purposes.
- *
- * But why would anyone want to do all this shit instead of just making some extra textures?
- *
- * Its more fun.
- * And im lazy. + I get to make a block/item that changes color when biomes do
- */
 
 @EventBusSubscriber(modid = Reference.MOD_ID)
 
 public class ColorHandler {
+
 
     /*
     @SubscribeEvent
@@ -47,50 +43,30 @@ public class ColorHandler {
         }
     }*/
 
-
+    @SideOnly(Side.CLIENT)
     @SubscribeEvent
     public static void registerItemColourHandlers(final ColorHandlerEvent.Item event) {
         final ItemColors itemColors = event.getItemColors();
 
         if(Configs.additions.Items){
-            for(int i = 0; i < ItemBase.METALS.size(); i++){
 
-                if(ItemBase.METALS.get(i).getUnlocalizedName().contains("zinc")){
-                    itemColors.registerItemColorHandler(new IItemColor(){
-                        public int colorMultiplier(ItemStack stack, int tintIndex) {
-                            return tintIndex == 0 ? FluidInit.FLUIDS.get(0).getColor() : -1;
-                        }
-                    }, ItemBase.METALS.get(i));
-                }
+            for(int i=0; i<ItemInit.ITEMS.size(); i++){
 
-                if(ItemBase.METALS.get(i).getUnlocalizedName().contains("palladium")){
-                    itemColors.registerItemColorHandler(new IItemColor(){
-                        public int colorMultiplier(ItemStack stack, int tintIndex) {
-                            return tintIndex == 0 ? FluidInit.FLUIDS.get(1).getColor() : -1;
-                        }
-                    }, ItemBase.METALS.get(i));
-                }
+                int finalI = i;
+                int index = ArrayUtils.indexOf(GetList.metalList(FluidInit.FLUIDS), GetInfo.metal(ItemInit.ITEMS.get(finalI)), 0);
+                if(index == -1) continue;
 
-                if(ItemBase.METALS.get(i).getUnlocalizedName().contains("titanium")){
-                    itemColors.registerItemColorHandler(new IItemColor(){
-                        public int colorMultiplier(ItemStack stack, int tintIndex) {
-                            return tintIndex == 0 ? FluidInit.FLUIDS.get(2).getColor() : -1;
-                        }
-                    }, ItemBase.METALS.get(i));
-                }
-
-                if(ItemBase.METALS.get(i).getUnlocalizedName().contains("mercury")){
-                    itemColors.registerItemColorHandler(new IItemColor(){
-                        public int colorMultiplier(ItemStack stack, int tintIndex) {
-                            return tintIndex == 0 ? FluidInit.FLUIDS.get(3).getColor() : -1;
-                        }
-                    }, ItemBase.METALS.get(i));
-                }
+                itemColors.registerItemColorHandler(new IItemColor(){
+                    public int colorMultiplier(ItemStack stack, int tintIndex) {
+                        return tintIndex == 0 ? FluidInit.FLUIDS.get(index).getColor() : -1;
+                    }
+                }, ItemInit.ITEMS.get(i));
 
             }
 
+
             if(Configs.compat.Mod("Nuclearcraft")){
-                for(int i = 0; i< ItemBase.NEEDS_CUSTOM_COLOR.size(); i++){
+                for(int i = 0; i<ItemBase.NEEDS_CUSTOM_COLOR.size(); i++){
 
                     int finalI = i;
 

@@ -1,14 +1,15 @@
 package evergoodteam.evergoodutilities.recipes;
 
 
-import evergoodteam.evergoodutilities.compat.ModLoaded;
 import evergoodteam.evergoodutilities.config.Configs;
-import evergoodteam.evergoodutilities.init.BlockInit;
-import evergoodteam.evergoodutilities.init.ItemInit;
+import evergoodteam.evergoodutilities.util.GetInfo;
+import evergoodteam.evergoodutilities.util.GetList;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+
+import java.util.List;
 
 
 public class SmeltingRecipes {
@@ -17,17 +18,14 @@ public class SmeltingRecipes {
 
         if(Configs.additions.Blocks && Configs.additions.Items){
 
-            // Zinc
-            GameRegistry.addSmelting(new ItemStack(BlockInit.ORE_ZINC), new ItemStack(ItemInit.INGOT_ZINC), 0.7f);
-            GameRegistry.addSmelting(new ItemStack(ItemInit.DUST_ZINC), new ItemStack(ItemInit.INGOT_ZINC), 0.7F);
+            List<Item> ORE = GetList.type("ore");
+            List<Item> INGOT = GetList.type("ingot");
 
-            // Palladium
-            GameRegistry.addSmelting(new ItemStack(BlockInit.ORE_PALLADIUM), new ItemStack(ItemInit.INGOT_PALLADIUM), 0.7f);
-            GameRegistry.addSmelting(new ItemStack(ItemInit.DUST_PALLADIUM), new ItemStack(ItemInit.INGOT_PALLADIUM), 0.7F);
-
-            if(ModLoaded.id("thermalfoundation")){
-                GameRegistry.addSmelting(new ItemStack(BlockInit.ORE_CINNABAR), new ItemStack(Item.getByNameOrId("thermalfoundation:material"), 1, 866), 0.7f);
+            for(int i=0; i<ORE.size(); i++){
+                if(GetInfo.findClone(INGOT, ORE.get(i)) == null) continue;
+                GameRegistry.addSmelting(new ItemStack(ORE.get(i)), new ItemStack(GetInfo.findClone(INGOT, ORE.get(i))), 0.7f);
             }
+
         }
     }
 }

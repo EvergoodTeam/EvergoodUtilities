@@ -1,5 +1,6 @@
 package evergoodteam.evergoodutilities.objects.commands;
 
+
 import net.minecraft.command.*;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.server.MinecraftServer;
@@ -11,6 +12,7 @@ import net.minecraft.world.GameType;
 import javax.annotation.Nullable;
 import java.util.Collections;
 import java.util.List;
+
 
 public class CommandSpectator extends CommandBase {
 

@@ -17,8 +17,9 @@ public class FluidBlockInit {
 
     public static final Block ZINC_FLUID = Configs.additions.Fluids ? new FluidBlockBase("fluid_zinc", FluidInit.ZINC_FLUID, Material.LAVA, 1.0F) : null;
     public static final Block PALLADIUM_FLUID = Configs.additions.Fluids ? new FluidBlockBase("fluid_palladium", FluidInit.PALLADIUM_FLUID, Material.LAVA, 1.0F) : null;
-    public static final Block TITANIUM_FLUID = Configs.additions.Fluids ? new FluidBlockBase("fluid_titanium", FluidInit.TITANIUM_FLUID, Material.WATER, 0.0F) : null;
+    public static final Block TITANIUM_FLUID = Configs.additions.Fluids ? new FluidBlockBase("fluid_titanium", FluidInit.TITANIUM_FLUID, Material.LAVA, 1.0F) : null;
     public static final Block MERCURY_FLUID = Configs.additions.Fluids ? new FluidBlockBase("fluid_mercury", FluidInit.MERCURY_FLUID, Material.WATER, 0.0F) : null;
+
     public static final Block ASTRALSTARMETAL_FLUID = Configs.additions.Fluids ? new FluidBlockBase("fluid_astralstarmetal", FluidInit.ASTRALSTARMETAL_FLUID, Material.LAVA, 1.0F) : null;
-    public static final Block AQUAMARINE_FLUID = Configs.additions.Fluids ? new FluidBlockBase("fluid_aquamarine", FluidInit.AQUAMARINE_FLUID, Material.LAVA, 1.0F) : null;
+    //public static final Block AQUAMARINE_FLUID = Configs.additions.Fluids ? new FluidBlockBase("fluid_aquamarine", FluidInit.AQUAMARINE_FLUID, Material.LAVA, 1.0F) : null;
 }

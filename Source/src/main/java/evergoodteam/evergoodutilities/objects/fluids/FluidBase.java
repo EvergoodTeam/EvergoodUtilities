@@ -20,6 +20,9 @@ public class FluidBase extends Fluid {
         this.setTemperature(temp + 273);
         this.setColor(Color.decode("0x"+color));
 
+        Color antonio = Color.decode("0x"+color);
+        antonio.brighter();
+
         if(this != null) {
             FluidInit.FLUIDS.add(this); // Add what just happened to the array from FluidInit
         }

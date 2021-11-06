@@ -30,7 +30,6 @@ public class BlockBase extends Block {
         }
     }
 
-
     /**
      * Make the layers have transparency, or whatever you want to call it.
      * It allows us to have block textures made up of different layers:

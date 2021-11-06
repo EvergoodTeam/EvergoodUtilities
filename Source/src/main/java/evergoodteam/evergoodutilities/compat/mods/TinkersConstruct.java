@@ -35,6 +35,7 @@ public class TinkersConstruct {
         TinkerRegistry.registerMelting(ItemInit.NUGGET_MERCURY, FluidInit.MERCURY_FLUID, 36);
         TinkerRegistry.registerMelting(ItemInit.INGOT_MERCURY, FluidInit.MERCURY_FLUID, 144);
         TinkerRegistry.registerMelting(BlockInit.BLOCK_MERCURY, FluidInit.MERCURY_FLUID, 1296);
+
         if(ModLoaded.id("extraplanets")) {
             TinkerRegistry.registerMelting(new ItemStack(Block.getBlockFromName("extraplanets:mercury"), 1, 6), FluidInit.MERCURY_FLUID, 288);
         }

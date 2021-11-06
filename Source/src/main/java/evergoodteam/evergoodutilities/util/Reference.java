@@ -10,7 +10,6 @@ public class Reference {
 
     public static final String UPDATE = "https://github.com/EvergoodTeam/EvergoodUtilities/raw/main/updateChecker.json";
 
-
     public static final String CLIENT_PROXY_CLASS = "evergoodteam.evergoodutilities.proxy.ClientProxy";
     public static final String COMMON_PROXY_CLASS = "evergoodteam.evergoodutilities.proxy.CommonProxy";
 

@@ -12,8 +12,6 @@ import java.util.List;
 
 public class ItemBase extends Item {
 
-
-    public static final List<Item> METALS = new ArrayList<Item>();
     public static final List<Integer> CUSTOM_COLORS = new ArrayList<Integer>();
     public static final List<Item> NEEDS_CUSTOM_COLOR = new ArrayList<Item>();
 
@@ -22,17 +20,9 @@ public class ItemBase extends Item {
         setRegistryName(name);
         setUnlocalizedName(name);
 
-        if(tab){
-            setCreativeTab(EvergoodUtilities.EVERGOODUTILITIESTAB);
-        }
+        if (tab) setCreativeTab(EvergoodUtilities.EVERGOODUTILITIESTAB);
 
-        if(this != null) {
-            ItemInit.ITEMS.add(this);
-
-            if(name.contains("zinc") || name.contains("palladium") || name.contains("titanium") || name.contains("mercury")){
-                ItemBase.METALS.add(this);
-            }
-        }
+        if(this != null) ItemInit.ITEMS.add(this);
     }
 
     // Needs specific color
@@ -42,9 +32,7 @@ public class ItemBase extends Item {
 
         ItemBase.CUSTOM_COLORS.add(color);
 
-        if(Tab){
-            setCreativeTab(EvergoodUtilities.EVERGOODUTILITIESTAB);
-        }
+        if(Tab) setCreativeTab(EvergoodUtilities.EVERGOODUTILITIESTAB);
 
         if(this != null) {
             ItemInit.ITEMS.add(this);

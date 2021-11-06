@@ -43,14 +43,14 @@ public class EvergoodUtilities{
     public void preInit(FMLPreInitializationEvent event){
 
         proxy.preInit(event);
-        logger.info("EU's PreInit Completed");
+        logger.info("Evergood Utilities' PreInit Completed");
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event){
 
         proxy.init(event);
-        logger.info("EU's Init Completed");
+        logger.info("Evergood Utilities' Init Completed");
     }
 
 
@@ -58,7 +58,7 @@ public class EvergoodUtilities{
     public void postInit(FMLPostInitializationEvent event){
 
         proxy.postInit(event);
-        logger.info("EU's PostInit Completed");
+        logger.info("Evergood Utilities' PostInit Completed");
     }
 
     @EventHandler

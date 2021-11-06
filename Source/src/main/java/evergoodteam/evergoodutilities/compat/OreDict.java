@@ -2,7 +2,7 @@ package evergoodteam.evergoodutilities.compat;
 
 
 import evergoodteam.evergoodutilities.init.ItemInit;
-import evergoodteam.evergoodutilities.util.GetName;
+import evergoodteam.evergoodutilities.util.GetInfo;
 
 import net.minecraftforge.oredict.OreDictionary;
 
@@ -12,11 +12,13 @@ public class OreDict {
     public static void registerOreDict(){
 
         for(int i=0; i<ItemInit.ITEMS.size(); i++){
-            if(GetName.oreDict(ItemInit.ITEMS.get(i).getRegistryName().toString()) == null){
+            if(GetInfo.oreDict(ItemInit.ITEMS.get(i)) == null){
+
                 continue;
             }
             else{
-                OreDictionary.registerOre(GetName.oreDict(ItemInit.ITEMS.get(i).getRegistryName().toString()), ItemInit.ITEMS.get(i));
+
+                OreDictionary.registerOre(GetInfo.oreDict(ItemInit.ITEMS.get(i)), ItemInit.ITEMS.get(i));
             }
         }
     }
