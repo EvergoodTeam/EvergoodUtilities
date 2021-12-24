@@ -1,0 +1,10 @@
+{
+  "homepage": "https://www.curseforge.com/minecraft/mc-mods/evergoodutilities",
+  "1.12.2": {
+    "0.1.1": "- Added Titanium, Cinnabar\n- Added Plates\n- Added Commands /sunny, /sp (spectator), /nv (nightvision)\n- Some code \"improvements\""
+  },
+  "promos": {
+    "1.12.2-latest": "0.1.1",
+    "1.12.2-recommended": "0.1.1"
+  }
+}
