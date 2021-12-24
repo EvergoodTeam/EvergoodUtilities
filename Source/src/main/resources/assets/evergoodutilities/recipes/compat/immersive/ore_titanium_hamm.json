@@ -1,0 +1,39 @@
+{
+  "conditions": [
+    {
+      "type": "config_compat",
+      "mod": "ImmersiveEngineering"
+    },
+    {
+      "type": "config_additions",
+      "add": "Blocks",
+      "add": "Items"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "oh"
+  ],
+
+  "key":
+  {
+    "o":
+    {
+      "type": "forge:ore_dict",
+      "ore": "oreTitanium"
+    },
+    "h":
+    {
+      "item": "immersiveengineering:tool",
+      "data": 0
+    }
+  },
+
+  "result":
+  {
+    "item":  "evergoodutilities:dust_titanium",
+    "count": 1
+  }
+}

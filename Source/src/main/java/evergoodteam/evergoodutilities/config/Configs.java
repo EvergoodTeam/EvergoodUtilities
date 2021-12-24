@@ -124,7 +124,7 @@ public class Configs {
     }
 
     @Comment("Configs related to the commands added")
-    public static Cmds commands = new Cmds(true, true, true, true);
+    public static Cmds commands = new Cmds(true, true, true);
 
     public static class Cmds{
 
@@ -137,17 +137,13 @@ public class Configs {
         @RequiresMcRestart
         @Comment("Enable/Disable the /sp command")
         public boolean Spectator;
-        @RequiresMcRestart
-        @Comment("Enable/Disable the /text command")
-        public boolean Text;
 
 
-        public Cmds(final boolean Sunny, final boolean Nightvision, final boolean Spectator, final boolean Text) {
+        public Cmds(final boolean Sunny, final boolean Nightvision, final boolean Spectator) {
 
             this.Sunny = Sunny;
             this.Nightvision = Nightvision;
             this.Spectator = Spectator;
-            this.Text = Text;
         }
     }
 

@@ -19,10 +19,12 @@ public class CompatHandler {
     public static void init(){
 
         if(Configs.compat.OreDictionary){
+
             OreDict.registerOreDict();
         }
 
         if(Configs.additions.Items && Configs.additions.Blocks && Configs.additions.Fluids) {
+
             if (Configs.compat.Mod("Mekanism")) {
                 Mekanism.addGases();
                 Mekanism.addEnrichmentChamberRecipe();
@@ -36,6 +38,7 @@ public class CompatHandler {
             }
 
             if(Configs.compat.Mod("Thermal")){
+
                 ThermalExpansion.addGlacialPrecipitator();
             }
         }
@@ -44,7 +47,9 @@ public class CompatHandler {
     public static void postInit(){
 
         if(Configs.additions.Items && Configs.additions.Blocks && Configs.additions.Fluids) {
+
             if(Configs.compat.Mod("TinkersConstruct")) {
+
                 TinkersConstruct.addMeltingRecipe();
                 TinkersConstruct.addAlloyRecipe();
                 TinkersConstruct.addCastingRecipe();
@@ -52,7 +57,9 @@ public class CompatHandler {
         }
 
         if(Configs.additions.Items && Configs.additions.Blocks) {
+
             if(Configs.compat.Mod("ImmersiveEngineering")){
+
                 ImmersiveEngineering.addCrusherRecipe();
                 ImmersiveEngineering.addArcFurnaceRecipe();
             }

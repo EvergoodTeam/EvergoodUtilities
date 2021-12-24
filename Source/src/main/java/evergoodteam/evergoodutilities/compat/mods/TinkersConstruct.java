@@ -6,9 +6,9 @@ import evergoodteam.evergoodutilities.init.BlockInit;
 import evergoodteam.evergoodutilities.init.FluidInit;
 import evergoodteam.evergoodutilities.init.ItemInit;
 
+import evergoodteam.evergoodutilities.util.GetInfo;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fluids.FluidStack;
 
 import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.smeltery.TinkerSmeltery;
@@ -16,18 +16,14 @@ import slimeknights.tconstruct.smeltery.TinkerSmeltery;
 
 public class TinkersConstruct {
 
-
     public static void addMeltingRecipe() {
 
         for(int i=0; i<FluidInit.FLUIDS.size(); i++){
-            if(FluidInit.FLUIDS.get(i).getUnlocalizedName().contains("zinc") || FluidInit.FLUIDS.get(i).getUnlocalizedName().contains("mercury")){
+            if(GetInfo.metal(FluidInit.FLUIDS.get(i)).equals("Zinc") || GetInfo.metal(FluidInit.FLUIDS.get(i)).equals("Mercury")){
                 continue;
             }
-            if(FluidInit.FLUIDS.get(i).getUnlocalizedName().contains("astralstarmetal")){
-                TinkerSmeltery.registerOredictMeltingCasting(FluidInit.FLUIDS.get(i), "AstralStarmetal");
-            }
             else{
-                TinkerSmeltery.registerOredictMeltingCasting(FluidInit.FLUIDS.get(i), FluidInit.FLUIDS.get(i).getLocalizedName(new FluidStack(FluidInit.FLUIDS.get(i), 1)).replaceAll("Molten ", ""));
+                TinkerSmeltery.registerOredictMeltingCasting(FluidInit.FLUIDS.get(i), GetInfo.metal(FluidInit.FLUIDS.get(i)));
             }
         }
 
@@ -36,9 +32,8 @@ public class TinkersConstruct {
         TinkerRegistry.registerMelting(ItemInit.INGOT_MERCURY, FluidInit.MERCURY_FLUID, 144);
         TinkerRegistry.registerMelting(BlockInit.BLOCK_MERCURY, FluidInit.MERCURY_FLUID, 1296);
 
-        if(ModLoaded.id("extraplanets")) {
-            TinkerRegistry.registerMelting(new ItemStack(Block.getBlockFromName("extraplanets:mercury"), 1, 6), FluidInit.MERCURY_FLUID, 288);
-        }
+        if(ModLoaded.id("extraplanets")) TinkerRegistry.registerMelting(new ItemStack(Block.getBlockFromName("extraplanets:mercury"), 1, 6), FluidInit.MERCURY_FLUID, 288);
+
     }
 
     public static void addAlloyRecipe(){
@@ -47,6 +42,8 @@ public class TinkersConstruct {
     }
 
     public static void addCastingRecipe(){
+
+
 
     }
 }

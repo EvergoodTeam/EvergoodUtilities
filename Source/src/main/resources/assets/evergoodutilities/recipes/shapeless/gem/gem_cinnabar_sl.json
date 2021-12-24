@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "type": "config_additions",
+      "add": "Items"
+    }
+  ],
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "gemCinnabar"
+    }
+  ],
+  "result": {
+    "item": "evergoodutilities:nugget_cinnabar",
+    "count": 9
+  }
+}

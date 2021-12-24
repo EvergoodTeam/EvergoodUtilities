@@ -15,55 +15,55 @@ public class GetList {
 
     public static String[] metalList(List<Fluid> input){
 
-        String [] stuffs = new String[input.size()];
+        String [] list = new String[input.size()];
 
         for(int i=0; i<input.size(); i++){
-            stuffs[i] = GetInfo.metal(input.get(i));
+            list[i] = GetInfo.metal(input.get(i));
 
         }
 
-        return stuffs;
+        return list;
     }
 
     public static String[] metaList(List<Item> input){
 
-        String [] stuffs = new String[input.size()];
+        String [] list = new String[input.size()];
 
         for(int i=0; i<input.size(); i++){
-            stuffs[i] = GetInfo.metal(input.get(i));
+            list[i] = GetInfo.metal(input.get(i));
 
         }
 
-        return stuffs;
+        return list;
     }
 
 
+    // Every oredict entry
     public static String[] oreDictList(List<Item> input){
 
-        String [] stuffs = new String[input.size()];
+        String [] list = new String[input.size()];
 
         for(int i=0; i<input.size(); i++){
-            stuffs[i] = GetInfo.oreDict(input.get(i));
+            list[i] = GetInfo.oreDict(input.get(i));
 
         }
 
-        return stuffs;
+        return list;
     }
-
 
 
     public static List<Item> type(String type){
 
-        List<Item> TYPES = new ArrayList<Item>();
+        List<Item> list = new ArrayList<Item>();
 
         for(int i=0; i<ItemInit.ITEMS.size(); i++){
 
             if (Objects.equals(GetInfo.type(ItemInit.ITEMS.get(i)), type)) {
-                TYPES.add(ItemInit.ITEMS.get(i));
+                list.add(ItemInit.ITEMS.get(i));
             }
         }
 
-        return TYPES;
+        return list;
     }
 
 }

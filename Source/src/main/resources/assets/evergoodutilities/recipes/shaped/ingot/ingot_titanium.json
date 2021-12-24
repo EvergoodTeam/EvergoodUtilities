@@ -1,0 +1,31 @@
+{
+    "conditions": [
+        {
+            "type": "config_additions",
+            "add": "Items"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "###",
+        "###",
+        "###"
+    ],
+
+    "key":
+    {
+        "#":
+        {
+            "type": "forge:ore_dict",
+            "ore": "nuggetTitanium"
+        }
+    },
+
+    "result":
+    {
+        "item":  "evergoodutilities:ingot_titanium",
+        "count": 1
+    }
+}

@@ -46,9 +46,6 @@ public class CommandSunny extends CommandBase {
      */
     public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException {
 
-
-
-
         GameRules gamerules = this.getOverWorldGameRules(server);
         String gamerule = "doDaylightCycle";
         String gamerule1 = "doWeatherCycle";

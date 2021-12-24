@@ -1,8 +1,10 @@
 package evergoodteam.evergoodutilities.objects.fluids;
 
 
+import evergoodteam.evergoodutilities.config.Configs;
 import evergoodteam.evergoodutilities.init.FluidBlockInit;
 
+import evergoodteam.evergoodutilities.util.GetInfo;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.EnumBlockRenderType;
@@ -19,8 +21,10 @@ public class FluidBlockBase extends BlockFluidClassic {
         setLightLevel(light);
 
         if(this != null) {
+
             FluidBlockInit.BLOCKSFLUID.add(this);
-            //ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName())); // This adds the Fluid as a block, which you can add
+
+            //ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));    This adds the Fluid as a block, which you can add
         }                                                                                      // in the Creative tab. We want it to only show
     }                                                                                          // up in JEI as a single simple texture, like any other fluid
 

@@ -37,19 +37,14 @@ public class CommandSpectator extends CommandBase {
      */
     public String getUsage(ICommandSender sender) {
 
-        return "/sp [player]  - Puts into spectator";
+        return "/sp [player]  - Puts Player into Spectator mode";
     }
 
     /**
      * Callback for when the command is executed
      */
-    public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException {/*
-            if (args.length <= 0)
-            {
-                throw new WrongUsageException("commands.gamemode.usage", new Object[0]);
-            }
-            else
-            {*/
+    public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException {
+
         GameType gametype = GameType.SPECTATOR;
 
         EntityPlayer entityplayer = args.length >= 1 ? getPlayer(server, sender, args[0]) : getCommandSenderAsPlayer(sender);

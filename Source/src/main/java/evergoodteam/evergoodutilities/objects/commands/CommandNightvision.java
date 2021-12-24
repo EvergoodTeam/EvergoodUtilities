@@ -35,7 +35,7 @@ public class CommandNightvision extends CommandBase {
      */
     public String getUsage(ICommandSender sender) {
 
-        return "/nv [player]  - Gives permanent nightvision";
+        return "/nv [player]  - Gives Player Permanent Nightvision";
     }
 
     /**

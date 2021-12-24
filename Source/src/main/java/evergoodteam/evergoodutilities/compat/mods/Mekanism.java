@@ -54,10 +54,10 @@ public class Mekanism {
 
     public static void addEnrichmentChamberRecipe(){
 
-        //Dirty Dust > Dust
+        // Dirty Dust -> Dust
         for(int i=0; i<DIRTY.size(); i++) MekanismAPI.recipeHelper().addEnrichmentChamberRecipe(new ItemStack(DIRTY.get(i)), new ItemStack(GetInfo.findClone(DUST, DIRTY.get(i))));
 
-        //Ore > 2 Dust
+        // Ore -> 2x Dust
         for(int i=0; i<ORE.size(); i++) {
             if(GetInfo.findClone(DUST, ORE.get(i)) == null) continue;
             MekanismAPI.recipeHelper().addEnrichmentChamberRecipe(new ItemStack(ORE.get(i)), new ItemStack(GetInfo.findClone(DUST, ORE.get(i)), 2));
@@ -68,6 +68,7 @@ public class Mekanism {
         if(ModLoaded.id("extraplanets")){
             MekanismAPI.recipeHelper().addEnrichmentChamberRecipe(new ItemStack(Block.getBlockFromName("extraplanets:neptune"), 1, 6), new ItemStack(ItemInit.DUST_ZINC, 2));
             MekanismAPI.recipeHelper().addEnrichmentChamberRecipe(new ItemStack(Block.getBlockFromName("extraplanets:jupiter"), 1, 6), new ItemStack(ItemInit.DUST_PALLADIUM, 2));
+            MekanismAPI.recipeHelper().addEnrichmentChamberRecipe(new ItemStack(Block.getBlockFromName("galacticraftplanets:asteroids_block"), 1, 4), new ItemStack(ItemInit.DUST_TITANIUM, 2));
             MekanismAPI.recipeHelper().addEnrichmentChamberRecipe(new ItemStack(Block.getBlockFromName("extraplanets:mercury"), 1, 6), new ItemStack(ItemInit.DUST_MERCURY, 2));
         }
     }
@@ -75,7 +76,7 @@ public class Mekanism {
 
     public static void addCombinerRecipe(){
 
-        //8 Dust + Cobble = Ore
+        // 8x Dust + Cobble -> Ore
         for(int i=0; i<ORE.size(); i++){
             if(GetInfo.findClone(ORE, DUST.get(i)) == null) continue;
             MekanismAPI.recipeHelper().addCombinerRecipe(new ItemStack(DUST.get(i), 8), new ItemStack(Blocks.COBBLESTONE), new ItemStack(GetInfo.findClone(ORE, DUST.get(i))));
@@ -87,9 +88,9 @@ public class Mekanism {
 
         for(int i=0; i<INGOT.size(); i++){
             if(GetInfo.findClone(DUST, INGOT.get(i)) == null || GetInfo.findClone(DIRTY, CLUMP.get(i)) == null) continue;
-            //Ingot > Dust
+            // Ingot -> Dust
             MekanismAPI.recipeHelper().addCrusherRecipe(new ItemStack(INGOT.get(i)), new ItemStack(GetInfo.findClone(DUST, INGOT.get(i))));
-            //Clump > Dirty Dust
+            // Clump -> Dirty Dust
             MekanismAPI.recipeHelper().addCrusherRecipe(new ItemStack(CLUMP.get(i)), new ItemStack(GetInfo.findClone(DIRTY, CLUMP.get(i))));
         }
     }
@@ -97,13 +98,13 @@ public class Mekanism {
 
     public static void addPurificationChamberRecipe(){
 
-        //Shard > Clump
+        // Shard -> Clump
         for(int i=0; i<CLUMP.size(); i++){
             if(GetInfo.findClone(CLUMP, SHARD.get(i)) == null) continue;
             MekanismAPI.recipeHelper().addPurificationChamberRecipe(new ItemStack(SHARD.get(i)), new ItemStack(GetInfo.findClone(CLUMP, SHARD.get(i))));
         }
 
-        //Ore > 3 Clump
+        // Ore -> 3x Clump
         for(int i=0; i<ORE.size(); i++){
             if(GetInfo.findClone(CLUMP, ORE.get(i)) == null) continue;
             MekanismAPI.recipeHelper().addPurificationChamberRecipe(new ItemStack(ORE.get(i)), new ItemStack(GetInfo.findClone(CLUMP, ORE.get(i)), 3));
@@ -116,6 +117,7 @@ public class Mekanism {
         if(ModLoaded.id("extraplanets")){
             MekanismAPI.recipeHelper().addPurificationChamberRecipe(new ItemStack(Block.getBlockFromName("extraplanets:neptune"), 1, 6), new ItemStack(ItemInit.CLUMP_ZINC, 3));
             MekanismAPI.recipeHelper().addPurificationChamberRecipe(new ItemStack(Block.getBlockFromName("extraplanets:jupiter"), 1, 6), new ItemStack(ItemInit.CLUMP_PALLADIUM, 3));
+            MekanismAPI.recipeHelper().addPurificationChamberRecipe(new ItemStack(Block.getBlockFromName("galacticraftplanets:asteroids_block"), 1, 4), new ItemStack(ItemInit.CLUMP_TITANIUM, 3));
             MekanismAPI.recipeHelper().addPurificationChamberRecipe(new ItemStack(Block.getBlockFromName("extraplanets:mercury"), 1, 6), new ItemStack(ItemInit.CLUMP_MERCURY, 3));
         }
     }
@@ -125,15 +127,18 @@ public class Mekanism {
 
         for(int i=0; i<SHARD.size(); i++){
             if(GetInfo.findClone(SHARD, CRYSTAL.get(i)) == null || GetInfo.findClone(SHARD, ORE.get(i)) == null) continue;
-            //Crystal > Shard
+            // Crystal -> Shard
             MekanismAPI.recipeHelper().addChemicalInjectionChamberRecipe(new ItemStack(CRYSTAL.get(i)), GasRegistry.getGas("hydrogenchloride"), new ItemStack(GetInfo.findClone(SHARD, CRYSTAL.get(i))));
-            //Ore > 4 Shard
+            // Ore -> 4x Shard
             MekanismAPI.recipeHelper().addChemicalInjectionChamberRecipe(new ItemStack(ORE.get(i)), GasRegistry.getGas("hydrogenchloride"), new ItemStack(GetInfo.findClone(SHARD, ORE.get(i)), 4));
         }
+
+        MekanismAPI.recipeHelper().addChemicalInjectionChamberRecipe(new ItemStack(BlockInit.ORE_CINNABAR), GasRegistry.getGas("hydrogenchloride"), new ItemStack(ItemInit.SHARD_MERCURY, 4));
 
         if(ModLoaded.id("extraplanets")){
             MekanismAPI.recipeHelper().addChemicalInjectionChamberRecipe(new ItemStack(Block.getBlockFromName("extraplanets:neptune"), 1, 6), GasRegistry.getGas("hydrogenchloride"), new ItemStack(ItemInit.SHARD_ZINC, 4));
             MekanismAPI.recipeHelper().addChemicalInjectionChamberRecipe(new ItemStack(Block.getBlockFromName("extraplanets:jupiter"), 1, 6), GasRegistry.getGas("hydrogenchloride"), new ItemStack(ItemInit.SHARD_PALLADIUM, 4));
+            MekanismAPI.recipeHelper().addChemicalInjectionChamberRecipe(new ItemStack(Block.getBlockFromName("galacticraftplanets:asteroids_block"), 1, 4), GasRegistry.getGas("hydrogenchloride"), new ItemStack(ItemInit.SHARD_TITANIUM, 4));
             MekanismAPI.recipeHelper().addChemicalInjectionChamberRecipe(new ItemStack(Block.getBlockFromName("extraplanets:mercury"), 1, 6), GasRegistry.getGas("hydrogenchloride"), new ItemStack(ItemInit.SHARD_MERCURY, 4));
         }
     }
@@ -141,7 +146,7 @@ public class Mekanism {
 
     public static void addChemicalDissolutionChamberRecipe(){
 
-        //Ore > Slurry
+        // Ore -> Slurry
         for(int i=0; i<INGOT.size(); i++){
             if(GetInfo.findClone(INGOT, ORE.get(i)) == null) continue;
             MekanismAPI.recipeHelper().addChemicalDissolutionChamberRecipe(new ItemStack(ORE.get(i)), new GasStack(GasRegistry.getGas(GetInfo.metalUncapital(GetInfo.findClone(INGOT, ORE.get(i)))+"Slurry"), 1000));
@@ -150,6 +155,7 @@ public class Mekanism {
         if(ModLoaded.id("extraplanets")){
             MekanismAPI.recipeHelper().addChemicalDissolutionChamberRecipe(new ItemStack(Block.getBlockFromName("extraplanets:neptune"), 1, 6), new GasStack(GasRegistry.getGas("zincSlurry"), 1000));
             MekanismAPI.recipeHelper().addChemicalDissolutionChamberRecipe(new ItemStack(Block.getBlockFromName("extraplanets:jupiter"), 1, 6), new GasStack(GasRegistry.getGas("palladiumSlurry"), 1000));
+            MekanismAPI.recipeHelper().addChemicalDissolutionChamberRecipe(new ItemStack(Block.getBlockFromName("galacticraftplanets:asteroids_block"), 1, 4), new GasStack(GasRegistry.getGas("titaniumSlurry"), 1000));
             MekanismAPI.recipeHelper().addChemicalDissolutionChamberRecipe(new ItemStack(Block.getBlockFromName("extraplanets:mercury"), 1, 6), new GasStack(GasRegistry.getGas("mercurySlurry"), 1000));
         }
     }
@@ -157,7 +163,7 @@ public class Mekanism {
 
     public static void addChemicalWasherRecipe(){
 
-        //Slurry > Clean Slurry
+        // Slurry -> Clean Slurry
         for(int i=0; i<INGOT.size(); i++){
             MekanismAPI.recipeHelper().addChemicalWasherRecipe(new GasStack(GasRegistry.getGas(GetInfo.metalUncapital(INGOT.get(i))+"Slurry"), 1), new GasStack(GasRegistry.getGas("clean"+ GetInfo.metal(INGOT.get(i))+"Slurry"), 1));
         }
@@ -166,7 +172,7 @@ public class Mekanism {
 
     public static void addChemicalCrystallizerRecipe(){
 
-        //Clean Slurry > Crystal
+        // Clean Slurry -> Crystal
         for(int i=0; i<CRYSTAL.size(); i++){
             if(GetInfo.findClone(CRYSTAL, INGOT.get(i)) == null) continue;
             MekanismAPI.recipeHelper().addChemicalCrystallizerRecipe(new GasStack(GasRegistry.getGas("clean"+ GetInfo.metal(INGOT.get(i))+"Slurry"), 200), new ItemStack(GetInfo.findClone(CRYSTAL, INGOT.get(i))));

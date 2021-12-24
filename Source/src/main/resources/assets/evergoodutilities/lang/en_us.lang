@@ -96,6 +96,8 @@ item.plate_mercury.name=Mercury Plate
 ## Misc
 item.nugget_lapis.name=Lapis Nugget
 
+item.nugget_cinnabar.name=Cinnabar Nugget
+
 item.nugget_boron.name=Boron Nugget
 item.nugget_lithium.name=Lithium Nugget
 item.nugget_thorium.name=Thorium Nugget

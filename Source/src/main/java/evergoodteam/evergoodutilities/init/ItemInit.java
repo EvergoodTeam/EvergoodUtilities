@@ -61,6 +61,8 @@ public class ItemInit {
     // Misc
     public static final Item NUGGET_LAPIS = Configs.additions.Items ? new ItemBase("nugget_lapis", true) : null;
 
+    public static final Item NUGGET_CINNABAR = Configs.additions.Items ? new ItemBase("nugget_cinnabar", true) : null;
+
     public static final Item NUGGET_BORON = Configs.additions.Items ?  Configs.compat.Mod("Nuclearcraft") ? new ItemBase("nugget_boron", true, 11842740) : null : null;
     public static final Item NUGGET_LITHIUM = Configs.additions.Items ?  Configs.compat.Mod("Nuclearcraft") ? new ItemBase("nugget_lithium", true, 16777215) : null : null;
     public static final Item NUGGET_THORIUM = Configs.additions.Items ?  Configs.compat.Mod("Nuclearcraft") ? new ItemBase("nugget_thorium", true, 4013373) : null : null;

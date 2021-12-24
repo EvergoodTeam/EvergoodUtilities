@@ -11,13 +11,13 @@ import java.util.List;
 
 public class GetInfo {
 
-    //Returns type of metal (Ingot, nugget, etc.)
+    // Returns type of metal (Ingot, nugget, etc.)
     public static String type(String input){
         String type = input.split(":")[1].split("_")[0];
 
         if(type.contains("icon")) return null;
 
-        if(type.contains("dirty")) type = type.replaceAll("dirty", "Dirty");
+        if(type.contains("dirty")) type = "dustDirty";
 
         return type;
     }
@@ -31,16 +31,14 @@ public class GetInfo {
     }
 
 
-    //Returns metal (Zinc, etc.)
+    // Returns metal (Zinc, etc.)
     public static String metal(String input){
         StringBuilder name = new StringBuilder(input);
 
         name.setCharAt(name.indexOf("_") + 1, Character.toUpperCase(name.charAt(name.indexOf("_") + 1)));
         String metal = name.toString().split("_")[1];
 
-        if (metal == "Astralstarmetal"){
-            metal = "AstralStarmetal";
-        }
+        if (metal.contains("Astralstarmetal")) metal = "AstralStarmetal";
 
         return metal;
     }
@@ -55,7 +53,7 @@ public class GetInfo {
     }
 
 
-    //Lower case metal
+    // Lower case metal
     public static String metalUncapital(Item input){
         return metal(input).substring(0, 1).toLowerCase() + metal(input).substring(1);
     }
@@ -65,7 +63,7 @@ public class GetInfo {
     }
 
 
-    //OreDictionary friendly name
+    // OreDictionary friendly name
     public static String oreDict(Item input){
 
         if(type(input) == null){
@@ -77,7 +75,7 @@ public class GetInfo {
     }
 
 
-    //Get same metal from a given group
+    // Get same metal from a given group
     public static Item findClone(List<Item> input, Item clone){
 
         int index = ArrayUtils.indexOf(GetList.metaList(input), metal(clone), 0);

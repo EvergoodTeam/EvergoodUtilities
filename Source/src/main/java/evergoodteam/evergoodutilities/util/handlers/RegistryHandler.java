@@ -6,7 +6,6 @@ import evergoodteam.evergoodutilities.init.*;
 import evergoodteam.evergoodutilities.objects.commands.CommandSunny;
 import evergoodteam.evergoodutilities.objects.commands.CommandNightvision;
 import evergoodteam.evergoodutilities.objects.commands.CommandSpectator;
-import evergoodteam.evergoodutilities.objects.commands.CommandText;
 import evergoodteam.evergoodutilities.recipes.CraftingRecipes;
 import evergoodteam.evergoodutilities.recipes.SmeltingRecipes;
 import static evergoodteam.evergoodutilities.config.Configs.*;
@@ -80,6 +79,5 @@ public class RegistryHandler {
         if(commands.Sunny) event.registerServerCommand(new CommandSunny());
         if(commands.Nightvision) event.registerServerCommand(new CommandNightvision());
         if(commands.Spectator) event.registerServerCommand(new CommandSpectator());
-        if(commands.Text) event.registerServerCommand(new CommandText());
     }
 }
