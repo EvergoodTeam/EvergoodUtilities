@@ -18,7 +18,7 @@ Want to support us? Make sure to use **code ```Libra```** for **25% OFF** your o
 Join us on [**Discord**](https://discord.gg/k2P68Y8) for support and updates on upcoming versions
 
 ## Issues
-If you encounter any issue during your playthrough, either with the Modpack itself or the Server Pack, make sure to report it either here on [**GitHub**](https://github.com/EvergoodTeam/EvergoodRefabricated/issues) or on [**Discord**](https://discord.gg/k2P68Y8) in the designated ```#issues``` channel
+If you encounter any issue during your playthrough, either with the Modpack itself or the Server Pack, make sure to report it either here on [**GitHub**](https://github.com/EvergoodTeam/EvergoodUtilities/issues) or on [**Discord**](https://discord.gg/k2P68Y8) in the designated ```#issues``` channel
 
 ***
 
