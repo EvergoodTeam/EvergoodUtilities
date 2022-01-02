@@ -23,4 +23,4 @@ If you encounter any issue during your playthrough, either with the Modpack itse
 ***
 
 ## License
-[**Read Here**](https://github.com/EvergoodTeam/EvergoodUtilities/blob/main/LICENSE.md)
+[**Read Here**](https://github.com/EvergoodTeam/EvergoodUtilities/blob/main/LICENSE)
