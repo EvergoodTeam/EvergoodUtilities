@@ -9,7 +9,9 @@ If you ever find a reposted version on a site that **ISN'T** Curseforge, please 
 
 ## Dev Versions
 
-Here on [**GitHub**](https://github.com/EvergoodTeam/EvergoodUtilities/releases) you will find version in active development, meaning that they're unstable compared to the released versions on [**Curseforge**](https://www.curseforge.com/minecraft/mc-mods/evergoodutilities)
+Here on [**GitHub**](https://github.com/EvergoodTeam/EvergoodUtilities/releases) you can find version in active development, meaning that they're unstable compared to the released versions on [**Curseforge**](https://www.curseforge.com/minecraft/mc-mods/evergoodutilities)
+
+These are marked by the ```dev``` suffix after the version number -> e.g. ```0.1.1 dev1```
 
 ## Support us!
 Want to support us? Make sure to use **code ```Libra```** for **25% OFF** your order when renting a server over at [**BisectHosting**](https://www.bisecthosting.com/Libra)
